@@ -1,0 +1,44 @@
+/*Cart inizio*/
+#cartContainer form{
+    margin: 0;
+}
+
+#cartContainer button{
+    position: relative;
+    color: #ffb320;
+    background-color: #131313;
+    transition: background-color 0.3s;
+    font-size: 150%;
+    margin-top: 0;
+    border: none;
+    height: 46px;
+    cursor: pointer;
+}
+
+#cartContainer button:hover {
+    color: #ff641e;
+}
+
+#cartContainer button.current {
+    background-color: #ffb320;
+    color: lightgray;
+}
+
+#cartContainer button.current:hover{
+    background-color: #ffb320;
+}
+
+div#cartContainer {
+    display: inline-block;
+    position: relative;
+    float: right;
+    margin-left: 3%;
+    transform: translateY(-2px);
+}
+
+@media screen and (max-width: 800px) {
+    div#cartContainer {
+        transform: translate(-45px, -12px);
+    }
+}
+/*Cart fine*/

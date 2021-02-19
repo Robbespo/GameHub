@@ -1,0 +1,221 @@
+.admin-body{
+    background-color: #303030;
+    color: lightgray;
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url("../img/backgroundLogin.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.admin-fieldset{
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 75%;
+    align-items: center;
+    text-align: -webkit-center;
+    margin-bottom: 3%;
+    background: rgba(48, 48, 48, 0.5) radial-gradient(black, transparent);
+    padding: 2%;
+    overflow: auto;
+}
+
+.admin-fieldset h3{
+    color: white;
+}
+
+form {
+    display: inline;
+}
+
+.manage-header-user, .manage-header-product, .manage-header-operator,
+.manage-header-moderator, .manage-header-category, .manage-header-tag, .manage-header-admin, .manage-header-digitalProduct,
+.manage-header-physicalProduct{
+    border-bottom: 4px solid #ffb320;
+    margin-left: 30%;
+    margin-top: 10%;
+    color: white;
+    width: fit-content;
+}
+
+
+.admin-textbox{
+    width: 45%;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 8px 0;
+    margin: 8px 0;
+    border-bottom: 1px solid #ffb320;
+    margin-left: 27%;
+    /*background-color: #c75450;*/
+}
+
+.admin-textbox input, textarea{
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 18px;
+    width: 95%;
+    float: left;
+    margin: 0 10px;
+    text-align: center;
+}
+
+.admin-fieldset{
+    width: 75%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 3%;
+    margin-right: 0;
+    background: rgba(48, 48, 48, 0.5) radial-gradient(black, transparent);
+    padding: 2%;
+}
+
+.table-div{
+    -ms-overflow-style: none;
+    overflow: auto;
+    float: none;
+    text-align: center;
+    text-align: -moz-center;
+    text-align: -webkit-center;
+}
+
+.table-div::-webkit-scrollbar{
+    display: none;
+}
+
+.btnAdmin{
+    width: 25%;
+    background: none;
+    border: 2px solid #ffb320;
+    color: white;
+    font-size: 112%;
+    cursor: pointer;
+}
+
+.btnAdmin:hover{
+    background-color: #404040;
+}
+
+#description, #curriculum, #description_category{
+    width: 80%;
+    height: 30%;
+    resize: none;
+    margin-left: 10%;
+    text-align: left;
+    border: #ffb320 1px solid;
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+
+#curriculum-label, #description-label{
+    margin-right: 20px;
+}
+
+
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr{
+    background-color: #ffb320;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+.content-table th, .content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 1px solid #292929;
+}
+
+.content-table tbody tr:nth-of-type(even){
+    background-color: #292929;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #ffb320;
+}
+
+#submitAdminButtonContainerRemoveUser > input[disabled],
+#submitAdminButtonContainerAddCourse > input[disabled],
+#submitAdminButtonContainerRemoveCourse > input[disabled],
+#submitAdminButtonContainerAddCategory > input[disabled],
+#submitAdminButtonContainerRemoveCategory > input[disabled],
+#submitAdminButtonContainerAddTeacher > input[disabled],
+#submitAdminButtonContainerAddAdmin > input[disabled],
+#submitAdminButtonContainerRemoveAdmin > input[disabled],
+#submitAdminButtonContainerAddTag > input[disabled],
+#submitAdminButtonContainerRemoveTag > input[disabled],
+#submitAdminButtonContainerAddDigitalProduct > input[disabled],
+#submitAdminButtonContainerRemoveDigitalProduct > input[disabled],
+#submitAdminButtonContainerAddPhysicalProduct > input[disabled],
+#submitAdminButtonContainerRemovePhysicalProduct > input[disabled]{
+    pointer-events: none;
+}
+
+.Error {
+    color: #c75450;
+    display: none;
+}
+
+.Error.visible {
+    display: block;
+}
+
+.paginationUsers, .paginationOperators, .paginationCategories, .paginationProducts,
+.paginationTags, .paginationModerators, .paginationAdmins, .paginationDigitalProducts, .paginationPhysicalProducts{
+    display: inline-block;
+}
+
+.paginationUsers span, .paginationOperators span, .paginationCategories span,
+.paginationProducts span, .paginationTags span, .paginationModerators span, .paginationAdmins span, .paginationDigitalProducts span,
+.paginationPhysicalProducts span{
+    display: none;
+    cursor: pointer;
+}
+
+.paginationUsers span.visible, .paginationOperators span.visible,
+.paginationCategories span.visible, .paginationProducts span.visible, .paginationTags span.visible,
+.paginationModerators span.visible, .paginationAdmins span.visible , .paginationDigitalProducts span.visible,
+.paginationPhysicalProducts span.visible{
+    display: unset;
+}
+
+.removeAdminAdminButton, .removeUserAdminButton, .removeOperatorAdminButton, .removeCategoryAdminButton,
+.removeProductAdminButton, .removeTagAdminButton, .removeModeratorAdminButton, .removeDigitalProductAdminButton,
+.removePhysicalProductAdminButton{
+    background: none;
+    outline: none;
+    border: none;
+    color: #c75450;
+    font-weight: bold;
+    font-size: 150%;
+    border-radius: 2px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.changeCategoryAdminButton, .changeProductAdminButton, .changeTagAdminButton, .changeProductAdminButton, .changeDigitalProductAdminButton,
+.changePhysicalProductAdminButton{
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: lightgrey;
+    padding: 4px 6px;
+    cursor: pointer;
+    border-radius: 2px;
+    font-size: 180%;
+}
